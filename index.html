@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>System Integrity Check</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0b1220;
+      color: #e5e7eb;
+      font-family: "Segoe UI", Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .window {
+      background: #020617;
+      border: 2px solid #ef4444;
+      width: 520px;
+      border-radius: 6px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.6);
+    }
+
+    .header {
+      background: #020617;
+      padding: 10px 14px;
+      font-weight: 600;
+      border-bottom: 1px solid #1e293b;
+      color: #f87171;
+    }
+
+    .content {
+      padding: 20px;
+      white-space: pre-line;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 16px;
+      padding: 8px 18px;
+      background: #ef4444;
+      border: none;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background: #dc2626;
+    }
+  </style>
+</head>
+<body>
+  <div class="window">
+    <div class="header">⚠ System Integrity Check</div>
+    <div class="content">
+MULTIPLE ISSUES DETECTED
+
+• Common sense: Missing
+• Decision making: Trial version expired
+• IQ Cache: Cleared
+• Problem source: User input
+
+Resolution required:
+Admit defeat and text:
+"ok you got me"
+    </div>
+    <div style="padding: 0 20px 20px;">
+      <button onclick="reveal()">Fine.</button>
+    </div>
+  </div>
+
+  <script>
+    function reveal() {
+      alert(
+        "PRANK COMPLETE 😄\n\n" +
+        "Relax.\nNothing is hacked.\nYou just got played."
+      );
+    }
+  </script>
+</body>
+</html>
